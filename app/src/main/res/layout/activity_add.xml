@@ -2,6 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/back"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
@@ -23,9 +25,12 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:padding="5dp"
+            android:textColor="@android:color/black"
             android:layout_marginRight="15dp"
             android:background="@drawable/border"
-            android:id="@+id/title"/>
+            android:id="@+id/title"
+            tools:text="Test"
+            />
 
     </LinearLayout>
 
@@ -53,17 +58,22 @@
             android:background="@drawable/border"
             android:layout_marginLeft="10dp"
             android:gravity="start"
-            android:id="@+id/body"/>
+            android:textColor="@android:color/black"
+            android:id="@+id/body"
+            tools:text="Tteeeesfgt"
+            android:fontFamily="monospace"
+            />
 
     </LinearLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/add_btn"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginRight="14dp"
-        android:layout_marginBottom="16dp"
-        app:backgroundTint="@color/colorPrimary"/>
+        android:layout_margin="16dp"
+        app:backgroundTint="@color/colorPrimary"
+        android:src="@drawable/ic_done_black_24dp"
+        />
 </RelativeLayout>

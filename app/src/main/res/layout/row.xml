@@ -6,13 +6,15 @@
     android:layout_height="wrap_content"
     android:background="@drawable/border"
     android:padding="5dp"
+    android:clickable="true"
     android:layout_margin="10dp">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:textSize="20sp"
+        android:textSize="26dp"
+        android:textColor="@color/colorPrimaryDark"
         android:text="test"
         android:layout_marginLeft="5dp"
         android:id="@+id/title"/>
@@ -23,6 +25,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/title"
         android:textSize="15sp"
+        android:fontFamily="monospace"
+
         android:layout_marginLeft="5dp"
         android:id="@+id/body"
         android:maxLines="1"
